@@ -11,7 +11,7 @@
     <title>Leonid Vasilyev</title>
     <link rel="stylesheet" href="//normalize-css.googlecode.com/svn/trunk/normalize.css" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'/>
     <b:skin>
       <![CDATA[
           
@@ -153,6 +153,7 @@
               margin-top: 6px;
               padding: 0;
               font-size: 13px;
+              font-family: 'Lobster', cursive;
             }
             
             .labels:after {
@@ -185,6 +186,12 @@
                 font-weight: 500;
                 line-height: 27px;
                 color: rgb(34, 34, 34);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            
+            article h2 {
+              margin: 10px 0 0 0;
             }
 
             article img {
@@ -239,7 +246,7 @@
       $('#about').addClass('active');
       break;
       default:
-      if (path.startsWith('/search/label/C#')) {
+      if (path.startsWith('/search/label/C%23')) {
       $('#c-sharp').addClass('active');
       } else if (path.startsWith('/search/label/Projects')) {
       $('#projects').addClass('active');
@@ -267,7 +274,7 @@
                 <a href="/">Home</a>
               </li>
               <li id="c-sharp">
-                <a href="/search/label/C#">C#</a>
+                <a href="/search/label/C%23">C#</a>
               </li>
               <li id="projects">
                 <a href="/search/label/Projects">Projects</a>
