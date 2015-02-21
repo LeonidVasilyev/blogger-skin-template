@@ -11,7 +11,7 @@
     <title>Leonid Vasilyev</title>
     <link rel="stylesheet" href="//normalize-css.googlecode.com/svn/trunk/normalize.css" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
-    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <b:skin>
       <![CDATA[
           
@@ -23,7 +23,7 @@
           }
           
        body {
-            font-family: monospace;
+            font-family: 'Source Sans Pro', sans-serif;
             font-weight: 500;
             background-color: #9D9382;
             margin: auto;
