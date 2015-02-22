@@ -222,6 +222,7 @@
           }
              
           .signature {
+            font-family: 'Lobster', cursive;
             float: right;
             padding-top: 40px;
           }
@@ -243,7 +244,7 @@
       $(document).ready(function() {
       var path = window.location.pathname;
       switch(path) {
-      case '/p/blog-page.html':
+      case '/p/about-me.html':
       $('#about').addClass('active');
       break;
       default:
@@ -281,7 +282,7 @@
                 <a href="/search/label/Projects">Projects</a>
               </li>
               <li id="about">
-                <a href="/p/blog-page.html">About me</a>
+                <a href="/p/about-me.html">About me</a>
               </li>
             </ul>
           </header>
@@ -314,7 +315,7 @@
                 </ul>
                 <data:i.body/>
                 <p class="signature">
-                  <data:i.author/>
+                  <!--<data:i.author/>-->L.V.
                 </p>
               </article>
             </b:loop>
