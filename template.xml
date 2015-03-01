@@ -173,15 +173,6 @@
       Article
       */
 
-      article p {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 27px;
-      color: rgb(34, 34, 34);
-      margin-top: 0;
-      margin-bottom: 0;
-      }
-
       article h2 {
       margin: 10px 0 0 0;
       }
@@ -319,11 +310,12 @@
       case '/p/about-me.html':
       $('#about-toggle').addClass('active-toggle');
       break;
+      case '/p/projects.html':
+      $('#projects-toggle').addClass('active-toggle');
+      break;
       default:
       if (path.startsWith('/search/label/C%23')) {
       $('#c-sharp-toggle').addClass('active-toggle');
-      } else if (path.startsWith('/search/label/Projects')) {
-      $('#projects-toggle').addClass('active-toggle');
       } else {
       $('#home-toggle').addClass('active-toggle');
       }
