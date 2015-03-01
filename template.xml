@@ -39,12 +39,6 @@
       padding-left: 25px;
       }
 
-      header ul::before {
-      background-color: #555;
-      height: 2px;
-      margin-bottom: -2px;
-      }
-
       header h1 {
       color: #FFC1B2;
       font-family: 'Lobster', cursive;
@@ -75,6 +69,7 @@
       position: relative;
       max-width: 150px;
       }
+      
       header li:hover {
       background: #FFC1B2;
       }
@@ -91,20 +86,8 @@
       font-family: 'Lobster', cursive
       }
 
-      .active {
+      .active-toggle {
       background: #FFC1B2;
-      }
-
-      #home-toggle::before,
-      #c-shart::before,
-      #projects-toggle::before,
-      #about-toggle::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 2px;
-      width: 100%;
       }
 
       .newer-page:before,
@@ -149,8 +132,11 @@
       color: black;
       }
 
-      .labels,
-      .widget ul.labels {
+      /*
+      Labels
+      */
+
+      .labels, .widget ul.labels {
       list-style: none;
       margin-top: 6px;
       padding: 0;
@@ -175,6 +161,7 @@
       .labels li:hover {
       background: #FFC1B2;
       }
+  
       .labels a {
       display: block;
       padding: 5px 5px;
@@ -182,8 +169,11 @@
       color: black;
       }
 
-      article p,
-      .signature {
+      /*
+      Article
+      */
+
+      article p {
       font-size: 18px;
       font-weight: 500;
       line-height: 27px;
@@ -248,7 +238,6 @@
       }
 
       #about-me-paragraph, #about-me-header {
-      float: left;
       margin: 0 220px 0 0;
       }
 
@@ -328,15 +317,15 @@
       var path = window.location.pathname;
       switch(path) {
       case '/p/about-me.html':
-      $('#about-toggle').addClass('active');
+      $('#about-toggle').addClass('active-toggle');
       break;
       default:
       if (path.startsWith('/search/label/C%23')) {
-      $('#c-sharp-toggle').addClass('active');
+      $('#c-sharp-toggle').addClass('active-toggle');
       } else if (path.startsWith('/search/label/Projects')) {
-      $('#projects-toggle').addClass('active');
+      $('#projects-toggle').addClass('active-toggle');
       } else {
-      $('#home-toggle').addClass('active');
+      $('#home-toggle').addClass('active-toggle');
       }
       }
       });
@@ -400,7 +389,6 @@
               </article>
             </b:loop>
             <b:include name="nextprev"/>
-
           </div>
         </b:includable>
 
